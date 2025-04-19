@@ -10,9 +10,6 @@ app.use(express.urlencoded({extended:true}))
 dotenv.config(); // Load env variables from .env file
 
 mongoose.connect(process.env.MONGO_URI, 
-
-// mongoose.connect(
-//     "mongodb+srv://mukul:1010@nodecluster0.hurza.mongodb.net/?retryWrites=true&w=majority&appName=NodeCluster0",
     {
         dbName:"URLshort"
     }
