@@ -5,7 +5,7 @@ import { Url } from "../Models/Url.js";
 export const shortUrl = async (req, res) => {
     const longUrl = req.body.longUrl;
     const shortCode = shortid.generate();
-    const shortUrl = `http://localhost:1000/${shortCode}`;
+    const shortUrl = `https://url-shortener-gsbj.onrender.com/${shortCode}`;
 
     //save to database
     const newURL = new Url({shortCode, longUrl});
